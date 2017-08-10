@@ -6,8 +6,5 @@
 //  Copyright © 2017年 安宁. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit>
 
-@interface StaticLibraryTemp : NSObject
-
-@end

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D7C4F7E1F1DAB4A0055EA6D /* StaticLibraryTemp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C4F7D1F1DAB4A0055EA6D /* StaticLibraryTemp.m */; };
-		4D7C4F7F1F1DAB4A0055EA6D /* StaticLibraryTemp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D7C4F7C1F1DAB4A0055EA6D /* StaticLibraryTemp.h */; };
+		4D7C4F861F1DAC0B0055EA6D /* StaticLibraryTemp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7C4F7C1F1DAB4A0055EA6D /* StaticLibraryTemp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4D7C4F7F1F1DAB4A0055EA6D /* StaticLibraryTemp.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -27,7 +25,6 @@
 /* Begin PBXFileReference section */
 		4D7C4F791F1DAB4A0055EA6D /* libStaticLibraryTemp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibraryTemp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7C4F7C1F1DAB4A0055EA6D /* StaticLibraryTemp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryTemp.h; sourceTree = "<group>"; };
-		4D7C4F7D1F1DAB4A0055EA6D /* StaticLibraryTemp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryTemp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +58,22 @@
 			isa = PBXGroup;
 			children = (
 				4D7C4F7C1F1DAB4A0055EA6D /* StaticLibraryTemp.h */,
-				4D7C4F7D1F1DAB4A0055EA6D /* StaticLibraryTemp.m */,
 			);
 			path = StaticLibraryTemp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D7C4F851F1DAB8C0055EA6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7C4F861F1DAC0B0055EA6D /* StaticLibraryTemp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4D7C4F781F1DAB4A0055EA6D /* StaticLibraryTemp */ = {
@@ -76,6 +83,7 @@
 				4D7C4F751F1DAB4A0055EA6D /* Sources */,
 				4D7C4F761F1DAB4A0055EA6D /* Frameworks */,
 				4D7C4F771F1DAB4A0055EA6D /* CopyFiles */,
+				4D7C4F851F1DAB8C0055EA6D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -123,7 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C4F7E1F1DAB4A0055EA6D /* StaticLibraryTemp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -233,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
